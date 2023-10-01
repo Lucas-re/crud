@@ -5,10 +5,13 @@
   include 'database/db_connect.php';
 
   // Mensagem
- include_once 'includes/mensagem.php';
+ include_once 'includes/mensagem.phtml';
 
  // Header
- include_once 'includes/header.php';
+ include_once 'includes/header.phtml';
+
+ // modal sair
+ require_once("includes/modal-logout.phtml")
 
 ?>
 <body>
@@ -66,13 +69,15 @@
     </table>
     <br>
     <a href="adicionar.php" class="btn">Adicionar cliente</a>
+    <input  style="margin-left: 330px;" id="btn-sair" type="button" name="btn-sair" class="btn red" value="Sair do sistema">
   </div>
-
 </div>
 <script src="assets/jquery3.7.1.min.js"></script>
 <script src="assets/login.js"></script>
+<script src="assets/logout.js"></script>
+<script src="assets/modal-logout.js"></script>
 </body>
 <?
  // Footer
- include_once 'includes/footer.php';
+ include_once 'includes/footer.phtml';
  ?>

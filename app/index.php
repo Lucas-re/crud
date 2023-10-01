@@ -1,8 +1,11 @@
 <?php
  ini_set('display_errors', 1);
 
+
+ //
+ require_once("includes/modal-logout.phtml");
  // Header
- include_once 'includes/header.php';
+ include_once 'includes/header.phtml';
 
 ?>
 
@@ -38,10 +41,11 @@
         
         <script src="assets/jquery3.7.1.min.js"></script>
         <script src="assets/login.js"></script>
+        <script src="assets/modal-logout.js"></script>
     </body>
 </html>
 
 <?
  // Footer
- include_once 'includes/footer.php';
+ include_once 'includes/footer.phtml';
  ?>

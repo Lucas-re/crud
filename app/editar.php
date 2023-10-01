@@ -12,7 +12,7 @@
  endif;
 
  // Header
- include_once 'includes/header.php';
+ include_once 'includes/header.phtml';
 ?>
 
 <div class="row">
@@ -52,5 +52,5 @@
 
 <?
  // Footer
- include_once 'includes/footer.php';
+ include_once 'includes/footer.phtml';
  ?>

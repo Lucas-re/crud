@@ -2,7 +2,7 @@
  ini_set('display_errors', 1);
 
  // Header
- include_once 'includes/header.php';
+ include_once 'includes/header.phtml';
 
 ?>
 
@@ -60,5 +60,5 @@
 
 <?
  // Footer
- include_once 'includes/footer.php';
+ include_once 'includes/footer.phtml';
  ?>
