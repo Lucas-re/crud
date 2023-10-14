@@ -33,7 +33,8 @@
                     </div>
                     
                     <input id="btn-entrar" type="submit" form="form1" name="btn-entrar" class="btn" value="Entrar" >
-                    <input style="margin-left: 44px;" id="btn-cadastro" type="submit" name="btn-cadastro" class="btn orange" value="Criar Cadastro">
+                    <a href="cadastrar_usuario.php" class="btn orange">Criar usuario</a>
+                    
                 </form>
                 </fieldset>
             </div>

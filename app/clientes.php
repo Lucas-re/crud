@@ -68,8 +68,8 @@
       </tbody>
     </table>
     <br>
-    <a href="adicionar.php" class="btn">Adicionar cliente</a>
-    <input  style="margin-left: 330px;" id="btn-sair" type="button" name="btn-sair" class="btn red" value="Sair do sistema">
+    <a href="cadastrar_cliente.php" class="btn">Cadastrar cliente</a>
+    <input  style="margin-left: 320px;" id="btn-sair" type="button" name="btn-sair" class="btn red" value="Sair do sistema">
   </div>
 </div>
 <script src="assets/jquery3.7.1.min.js"></script>

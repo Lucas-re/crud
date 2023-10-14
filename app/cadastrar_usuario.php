@@ -44,8 +44,8 @@
                 <legend>Idade</legend>
                 <input type="text" name="idade" id="idade">
                 <div style="margin-top: 10px;">
-                    <button id="btn-cadastrar" type="submit" name="btn-cadastrar" class="btn">Cadastrar</button>
-                    <a style="margin-left: 44px;" href="index.php" class="btn green">Voltar a pagina de login</a>
+                    <button id="btn-cadastrar-usuario" type="submit" name="btn-cadastrar-usuario" class="btn">Cadastrar</button>
+                    <a style="margin-left: 44px;" href="index.php" class="btn orange">Voltar a pagina de login</a>
                 </div>
 
             </div>
@@ -54,7 +54,7 @@
     </fieldset>
   </div>
         <script src="assets/jquery3.7.1.min.js"></script>
-        <script src="assets/cadastrar.js"></script>
+        <script src="assets/cadastrar_usuario.js"></script>
     </body>
 </html>
 
