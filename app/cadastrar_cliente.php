@@ -30,7 +30,7 @@
                 <legend>Idade</legend>
                 <input type="text" name="idade" id="idade">
                 <div style="margin-top: 10px;">
-                    <button type="submit" name="btn-cadastrar-cliente" class="btn">Cadastrar</button>
+                    <button id="btn-cadastrar-clientes" type="button" name="btn-cadastrar-clientes" class="btn">Cadastrar</button>
                     <a style="margin-left: 10px;" href="clientes.php" class="btn green">Lista de Clientes</a>
                     <input  style="margin-left: 189px;" id="btn-sair" type="button" name="btn-sair" class="btn red" value="Sair do sistema">
                 </div>
@@ -44,6 +44,7 @@
     </div>
     <script src="assets/jquery3.7.1.min.js"></script>
     <script src="assets/logout.js"></script>
+    <script src="assets/cadastrar_clientes.js"></script>
     <script src="assets/modal-logout.js"></script>
 </body>
 

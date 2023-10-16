@@ -1,4 +1,4 @@
-$('#btn-cadastrar').click(function(e){
+$('#btn-cadastrar-usuario').click(function(e){
 
     e.preventDefault();
 
@@ -44,16 +44,28 @@ $('#btn-cadastrar').click(function(e){
 
    
     $.ajax({
-        url: 'http://localhost/Crud-project/app/controllers/cadastro.php',
+        url: 'http://localhost/Crud-project/app/controllers/cadastrar_usuario.php',
         method: 'POST', 
-        data: {nome: nome, login: login, senha: senha1},
+        data: {nome: nome, login: login, senha: senha1, email: email, idade: idade},
         dataType: 'json'
     }).done(function(result){
 
-        if(result == 'Cadastrado com sucesso!'){
-            alert(result);
+        if(result['result'] == true && result['status'] == 1){
+            alert(result['message']);
+            location.href = 'http://localhost/Crud-project/app/cadastrar_usuario.php';
+
+            $('#nome').val() = '';
+            $('#login').val() = '';
+            $('#email').val() = '';
+            $('#idade').val() = '';
+            $('#senha1').val() = '';
+            $('#senha2').val() = '';
+
+        }else if(result['result'] == true){
+            alert(result['message']);
             location.href = 'http://localhost/Crud-project/app/index.php';
         }
+            
         alert(result);
     });
 });
