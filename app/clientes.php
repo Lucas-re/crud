@@ -11,7 +11,10 @@
  include_once 'includes/header.phtml';
 
  // modal sair
- require_once("includes/modal-logout.phtml")
+ require_once("includes/modal-logout.phtml");
+
+ // modal excluir cliente
+ require_once("includes/modal-excluir-cliente.phtml");
 
 ?>
 <body>
@@ -46,8 +49,19 @@
               <td><?php echo $aCliente['email']?></td>
               <td><?php echo $aCliente['idade']?></td>
           
-            <td><a href="editar.php?id=<?php echo $aCliente['id']?>" class="btn-floating orange " name="btn-editar"><i class="material-icons">edit</i></a></td>
-            <td><a href="php_action/delete.php?id=<?php echo $aCliente['id']?>" class="btn-floating red modal-trigger" name="btn-excluir" ><i class="material-icons">delete</i></a></td>
+            <td>
+              <a href="editar.php?id=<?php echo $aCliente['id']?>" class="btn-floating orange " name="btn-editar">
+                <i class="material-icons">edit</i>
+              </a>
+            </td>
+
+            <td>
+
+              <button id="btn-excluir-cliente" type="button" name="btn-excluir-cliente" class="btn-floating red modal-trigger" value="<?php echo $aCliente['id']?>">
+                <i class="material-icons">delete</i>
+              </button>
+
+            </td>
 
           <?php
            }
@@ -76,6 +90,8 @@
 <script src="assets/login.js"></script>
 <script src="assets/logout.js"></script>
 <script src="assets/modal-logout.js"></script>
+<script src="assets/excluir-cliente.js"></script>
+<script src="assets/modal-excluir-cliente.js"></script>
 </body>
 <?
  // Footer
